@@ -32,23 +32,23 @@ spring:
           uri: lb://USER-SERVICE
           predicates:
             - Path=/api/user/**
-        # - id: news-service-news
-        #   uri: lb://NEWS-SERVICE
-        #   predicates:
-        #     - Path=/api/news/**
-        # - id: news-service-football
-        #   uri: lb://NEWS-SERVICE
-        #   predicates:
-        #     - Path=/api/football/**
-        # - id: search-service.yml
-        #   uri: lb://SEARCH-SERVICE
-        #   predicates:
-        #     - Path=/api/search/**
-        # - id: notification-service-send-email
-        #   uri: lb://NOTIFICATION-SERVICE
-        #   predicates:
-        #     - Path=/api/email/**
-        # - id: notification-service-save-post
-        #   uri: lb://NOTIFICATION-SERVICE
-        #   predicates:
-        #     - Path=/api/post/**
+        - id: news-service-news
+          uri: lb://NEWS-SERVICE
+          predicates:
+            - Path=/api/news/**
+        - id: news-service-football
+          uri: lb://NEWS-SERVICE
+          predicates:
+            - Path=/api/football/**
+        - id: search-service.yml
+          uri: lb://SEARCH-SERVICE
+          predicates:
+            - Path=/api/search/**
+        - id: notification-service-send-email
+          uri: lb://NOTIFICATION-SERVICE
+          predicates:
+            - Path=/api/email/**
+        - id: notification-service-save-post
+          uri: lb://NOTIFICATION-SERVICE
+          predicates:
+            - Path=/api/post/**
