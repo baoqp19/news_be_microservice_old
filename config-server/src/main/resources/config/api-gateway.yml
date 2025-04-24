@@ -24,10 +24,10 @@ spring:
         locator:
           enabled: true
       routes:
-        # - id: user-service-auth
-        #   uri: lb://USER-SERVICE
-        #   predicates:
-        #     - Path=/api/auth/**
+        - id: user-service-auth
+          uri: lb://USER-SERVICE
+          predicates:
+            - Path=/api/auth/**
         - id: user-service-user
           uri: lb://USER-SERVICE
           predicates:
